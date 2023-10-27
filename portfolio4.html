@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(-90deg,darkgray,white);
+        }
+        #flex{
+            display: flex;
+            justify-content: center;
+        }
+       .i{
+        width: 200px;
+        height: 30vh;
+        background-color: white;
+        margin: 14vh 20px;
+       }
+       .image{
+            width: 200px;
+            height: 30vh;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+            flex: 1; 
+            transform: scale(1);
+            transition: scale,0.5s;
+       }
+       .image:hover{
+            transform: scale(0.8);
+       }
+       #green{
+        animation: changecolor infinite 3s;
+       }
+       #orange{
+        animation: changecolor1 infinite 3s;
+       }
+       #red{
+        animation: changecolor2 infinite 3s;
+       }
+       @keyframes changecolor {
+            0%{
+                background-color: white;
+            }
+            75%{
+                background-color: rgba(0, 128, 0, 0.495);
+            }
+            100%{
+                background-color: green;
+            }
+       }
+       @keyframes changecolor1 {
+        0%{
+                background-color: white;
+            }
+            75%{
+                background-color: rgba(255, 166, 0, 0.573);
+            }
+            100%{
+                background-color: orange;
+            }
+       }
+       @keyframes changecolor2 {
+        0%{
+                background-color: white;
+            }
+            75%{
+                background-color:rgba(255, 0, 0, 0.523);
+            }
+            100%{
+                background-color: red;
+            }
+       }
+       #details{
+            display: flex;
+            justify-content: center;
+        }
+       .j{
+        width: 200px;
+        height: 17vh;
+        /*background-color: white;*/
+        margin: 0 20px;
+        position: relative;
+        top: -90px;
+       }
+       #arr{
+            width: 30px;
+            height: 40px;
+        }
+        a{
+            font-size: 18px;
+            color: red;
+            text-decoration: none;
+            position: relative;
+            top: -15px;
+        }
+    </style>
+</head>
+<body>
+   <center><h1 style="color: blue;">Education</h1></center> 
+   <img src="./pngwing.com (29).png" id="arr"><a href="" id="port4-0" onclick="handleClick()" >Back</a>
+   <div id="flex">
+        <div class="i" ><img src="./school.png" alt="" class="image" id="green"></div>
+        <div class="i" ><img src="./Intermediate.png" alt="" class="image" id="orange"></div>
+        <div class="i" ><img src="./Engineering.png" alt="" class="image" id="red"></div>
+   </div>
+   <div id="details">
+     <div class="j">
+        <h4 style="color:green;">Sri Sai High School</h4>
+        <h5 style="color:rgba(255, 0, 0, 0.523);">Passed out-2016</h5>
+        <h5>Percentage-<span style="color: green;">83.0%</span></h5>
+
+    </div>
+     <div class="j">
+        <h4 style="color:orange;">Sri Sai High School</h4>
+        <h5 style="color:rgba(255, 0, 0, 0.523);">Passed out-2018</h5>
+        <h5>Percentage-<span style="color: orange;">83.0%</span></h5>
+
+     </div>
+     <div class="j">
+        <h4 style="color:red;">Sri Sai High School</h4>
+        <h5 style="color:green;">Passed out-2016</h5>
+        <h5>Percentage-<span style="color: red;">83.0%</span></h5>
+
+     </div>
+   </div>
+   <script>
+    const handleClick=()=>{
+        document.getElementById("port4-0").href="./portfolio.html"
+    }
+   </script>
+</body>
+</html>

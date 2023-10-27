@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <style>
+        body{
+            background-color: black;
+            overflow: hidden;
+        }
+        #main{
+            margin: 5vh;
+           display: flex;
+           flex-wrap: wrap;
+        }
+        #i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+        .box{
+            flex: 1;
+            width: 150px;
+            margin: 20px;
+            border: 1px solid white;
+            height: 230px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: background infinite 2s;
+            transform: scale(1);
+            transition: scale,border,0.2s ;
+        }
+        .box:hover{
+            transform: scale(0.9);
+            border: 1px solid red;
+        }
+        #skills{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .img{
+            width: 150px;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+            flex: 1; 
+        }
+        @keyframes background {
+            0%{
+                background-color: black;
+            }
+            75%{
+                background-color: rgba(0, 255, 255, 0.605);
+            }
+            100%{
+                background-color: aqua;
+            }
+            
+        }
+        #b{
+            display: flex;
+            justify-content: end;
+            font-size: 16px;
+        }
+        #arr{
+            width: 50px;
+            height: 18px;
+        }
+        a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+     </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="skills">My Skills</h1>
+    <h1 id="b"><img src="./pngwing.com (29).png" id="arr"><a href="" id="port3-0" onclick="handleClick()" >Back</a></h1>
+   <div id="main">
+       <div id="i">
+       <div class="box" id="div1"><img src="./html.png" alt="" class="img"></div>
+       <div class="box" id="div2"><img src="./css.png" alt="" class="img"></div>
+       <div class="box" id="div3"><img src="./javascript.png" alt="" class="img"></div>
+       <div class="box" id="div4"><img src="./react.png" alt="" class="img"></div>
+       </div>
+       <div id="i">
+       <div class="box" id="div5"><img src="./java.png" alt="" class="img"></div>
+       <div class="box" id="div6"><img src="./c++.png" alt="" class="img"></div>
+       <div class="box" id="div7"><img src="./mysql.png" alt="" class="img"></div>
+       <div class="box" id="div8"><img src="./communication.png" alt="" class="img"></div>
+    </div>
+   </div>
+   <script>
+    const handleClick=()=>{
+              document.getElementById("port3-0").href="./portfolio.html"
+    }
+   </script>
+</body>
+</html>

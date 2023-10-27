@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        body{
+            background-image: linear-gradient(90deg,teal,rgba(255, 99, 71, 0.603));
+            overflow: hidden;
+        }
+        #flower{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 28vh;
+            width: 100%;
+            height: 600%;
+            background-color: bisque;
+            position: relative;
+        }
+        .a{
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(hotpink,pink);
+            border-radius: 100% 0% 100% 0%;
+            position: absolute;
+            rotate: -45deg;
+            left: 400px;
+            top: 80px;
+        }
+        #flower:hover
+         #a{
+            rotate: -91.5deg;
+            left: 320px;
+        }
+        #flower:hover
+         #b{
+            rotate: -70deg;
+            left: 360px;
+        }
+        #flower:hover
+        #c{
+            rotate: 0deg;
+            left: 470px;
+
+        }
+        #flower:hover
+         #d{
+            rotate: -20deg;
+            left: 435px;
+        }
+        #f{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            bottom: 18vh;
+            left: 42.6vw;
+            border-radius: 0% 0% 100% 100%;
+        }
+        #h1{
+            color: green;
+            position: absolute;
+            bottom: 20vh;
+        }
+        #arr1{
+            width: 15px;
+        }
+        #backing{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <a id="backing" href="" onclick="handleClick()"><img src="./pngwing.com (29).png"  id="arr1"alt="">Back</a>
+    <div id="flower" >
+        <div id="a" class="a" ></div>
+        <div id="b" class="a"></div>
+        <div id="c" class="a"></div>
+        <div id="d" class="a"></div>
+        <div id="e" class="a"></div>
+    </div>
+    <div id="f"></div> 
+    <h1 id="Thank"></h1>
+    <script>
+            document.getElementById("flower").addEventListener("mouseover",()=>
+            {
+                let b="Thank you guys for watching!!!"
+                let a=document.getElementById("Thank").innerHTML=b;
+                document.getElementById("Thank").innerHTML.color="white"
+            })
+            document.getElementById("Thank").style.color="white"
+            document.getElementById("flower").addEventListener("mouseleave",()=>
+            {
+                document.getElementById("Thank").innerHTML="";
+            })
+             const handleClick=()=>{
+            document.getElementById("backing").href="./portfolio.html";
+        }
+    </script>
+</body>
+</html>

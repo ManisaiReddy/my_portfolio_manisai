@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #00000f;
+    overflow: hidden;
+}
+#navbar{
+    display: flex;
+    flex-flow: row;
+    padding: 2vh;
+    float: right;
+    align-items: center;
+   
+}
+.list{
+    display: inline;
+    padding: 7vw;
+    font-size: 18px;
+    transform: scale(1);
+    transition: scale,0.5s;
+    
+}
+.list:hover{
+    transform: scale(.7);
+}
+.listStyle{
+    color:rgb(191, 0, 255);
+    transition: color,1s;
+}
+.listStyle:hover{
+    color: rgb(0, 58, 128);
+}
+#namingSection{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    float: right;
+    color: white;
+    padding: 15vh;
+
+}
+.he{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.role{
+    color: red;
+    transform: scale(1);
+    transition: scale,0.2s;
+}
+.role:hover{
+    transform: scale(0.9);
+}
+#manisai-image{
+    width: 300px;
+    height: 350px;
+    aspect-ratio: 3/2;
+}
+#image{
+    width: 300px;
+    height: 350px;
+    box-shadow: 0px 0px 4px white;
+    transform: scale(1);
+    transition: scale,0.1s;
+}
+#image:hover{
+    transform: scale(0.9);
+}
+.b{
+    color: white;
+}
+#description{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 300px; 
+    padding:10vh ;
+    color: rgba(255, 255, 255, 0.897);
+}
+.desc1{
+  
+  color: green;
+}
+.i{
+    position: relative;
+    top: -12vh;
+    width: 3vw;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    float: right;
+    opacity: 0.9;
+    background-color: black;
+    transform: scale(1);
+    transition:background-color,opacity,scale,0.2s;
+}
+.i:hover{
+     transform:scale(0.8) ;
+     background-color: red;
+     opacity: 1;
+}
+#time{
+    display: flex;
+    flex-direction: column;
+    column-gap: 4px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 390px;
+    left: 370px;
+}
+#Time{
+     letter-spacing: 2px;
+    color:rgb(255, 255, 47);
+}
+#a1{
+    color: azure;
+    text-decoration: none;
+}
+#a2{
+    color: azure;
+    text-decoration: none;
+}
+#a3{
+    color: azure;
+    text-decoration: none;
+}
+#a4{
+    color: azure;
+    text-decoration: none;
+}
+

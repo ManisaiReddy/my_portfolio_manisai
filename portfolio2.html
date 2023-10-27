@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+   <style>
+    *{
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+     }
+     body{
+        background-color: #000f;
+        overflow: hidden;
+     }
+     #backul{
+        display: flex;
+        align-items: center;
+        margin: 1vh;
+        justify-content: end;
+        float: right;
+     }
+     #back{
+        font-size: 3vh;
+        color: white;
+        text-decoration: none;
+     }
+     #arrow{
+        width: 50px;
+        height: 18px;
+     }
+     span{
+        color: gray;
+     }
+     h3{
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 1vw;
+     }
+     #contentName{
+        display: flex;
+        flex-direction: column;
+        color: gray;
+        padding: 5vh;
+     }
+     #subcontent{
+        color:red;
+        justify-content: center;
+        padding: 2vh;
+        margin: 2vw;
+     }
+     #realcontent{
+        display: flex;
+        flex-direction: row;
+     }
+     #info{
+        display: flex;
+        color: rgba(255, 255, 255, 0.79);
+        width: 40%;
+        padding: 5vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+     }
+     #circle{
+      height: 200px;
+      width: 200px;
+      background-color:teal;
+      position: relative;
+      right: -62vw;
+      top: -60vh;
+      border-radius: 50%;
+      z-index: 0;
+     }
+     #about{
+      position: relative;
+      right: -50vw;
+      top: -87vh;
+     }
+   </style>
+</head>
+<body>
+   <h3 ><span>MANISAI</span><br>SADUVALA</h3>
+    <ul id="backul">
+        <li class="backButton">
+            <img src="./pngwing.com (29).png" alt="arrow-img" id="arrow">
+            <a id="back"href="" onclick="handleClick()">Back</a>
+        </li>
+    </ul>
+    <div id="content">
+     <h1 id="contentName">Namaste, I'm Manisai</h1>
+     <h2 id="subcontent">Passionate FrontEnd Developer</h2>
+    </div>
+    <div id="realContent">
+        <h3 id="info">Iam a passionate and detail-oriented FrontEnd Developer,
+            Specializing in creating responsive and user-friendly websites.
+            As a recent graduate with a strong foundation in HTML,CSS and JavaScript,
+            I am dedicated to crafting engaging digital experiences.I thrive in
+            collabarative environments, where my problem-solving skills and creativitycan
+            contribute to innovative web solutions.Familiar with JavaScript libraries such
+            as React.js and next.js Highly-motivated and seeking position to start career 
+            as a FrontEnd developer to enhance my skills and knowledge.I worked as a tuitor
+             in a institute where, I was gone through taking up challenges and targeting them 
+             first.Learning new things is a art for me and utilizing those things in projects are quietly yes...
+        </h3>
+        <div id="circle">
+        </div>
+        <img src="./aboutme-removebg-preview.png" alt="" id="about">
+
+    </div>
+    <script>
+        const handleClick=()=>{
+            document.getElementById("back").href="./portfolio.html"
+        }
+    </script>
+
+</body>
+</html>
